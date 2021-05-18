@@ -1,0 +1,32 @@
+
+.bg{
+	background-image:url(../images/bg-plain.jpeg);
+	background-position: center;
+	background-repeat: repeat-y;
+	
+}
+
+.bg-color{
+	background-color: #ffffe6;
+	min-height: 600px;
+}
+
+.list{
+	float: right;
+	list-style: none;
+	margin-top: 50px;
+
+}
+.list>li{
+	float: left;
+	padding: 5px;
+}
+
+.min-height{
+	min-height:300px;
+}
+
+.tbl{
+	width: 80%;
+	
+}
