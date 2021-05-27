@@ -7,8 +7,10 @@
 }
 
 .bg-color{
-	background-color: #ffffe6;
-	min-height: 600px;
+	/* background-color: #ffffe6; */
+	background-color: rgba(255,255,230, 1);
+	min-height: 600px;	
+	margin-bottom: 30px;
 }
 
 .list{
@@ -29,4 +31,18 @@
 .tbl{
 	width: 80%;
 	
+}
+.frmd{
+	margin: auto;
+	width: 50%;
+}
+.error{
+	color: red;
+}
+.cardbg{
+	border:none !important;
+	min-height: 300px;
+}
+.cardheaderbg{
+	background-color: rgba(255,255,230, 1) !important;
 }

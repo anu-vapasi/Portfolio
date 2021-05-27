@@ -5,7 +5,7 @@
         <title>My website</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css" />
-         <link rel="stylesheet" href="./css/form.css" />
+        <!-- <link rel="stylesheet" href="./css/form.css" /> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,12 +18,12 @@
        <div class="container bg-color" >
            <header>
            <div class="row header mt-3" >
-               <div class="col-2" ><img src="./images/logo.png " height="150" /></div>
+               <div class="col-2" ><a href="index.html"><img src="./images/logo.png " height="150" /></a></div>
                <div class="col" >
                    <nav>
                        <ul class="list">
                           <li><a href="index.html" class="btn btn-success" >About</a> </li>
-                           <li><a href="summary.html" class="btn btn-success">Skills</a> </li>
+                           <li><a href="summary.html" class="btn btn-success">Summary</a> </li>
                            <li><a href="#" class="btn btn-danger">Contact</a> </li>
                        </ul>
                        
@@ -35,126 +35,159 @@
         </header>
         <hr />
       
-            <div class="row">
-                <div class="col">
-                  <h2>Contact Us</h2>
-                  <form>
-                     
-                      <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
-                      <section>
-                          <p>
-                              <label for="name">
-                                  <span>Name: </span>
-                                  <strong><abbr title="required">*</abbr></strong>
-                              </label>
-                              <input type="text" id="name" name="username"></input>
-                          </p>
-                          <p>
-                              <label for ="email">
-                                  <span>Email-id: </span>
-                                  <strong><abbr title="required">*</abbr></strong>
-                              </label>
-                              <input type="email" id="email" name="email">
-                          </p>
-                          <p>
-                              <label for ="mobile">
-                                  <span>Mobile Number: </span>
-                                  <strong><abbr title="required">*</abbr></strong>
-                              </label>     
-                              <input type="tel" id="mobile" name="mobile_number">       
-                          </p>
-                          <fieldset id="qualification">
-                              <legend>Education Qualification</legend>
-                              <p>
-                                  <div class="label_handle">
-                                      <label for="high_degree">
-                                          <span>Select your highest Qualification</span>
-                                          <strong><abbr title="required">*</abbr></strong>
-                                      </label>
-                                      <select id="high_degree">
-                                      <option value="doctrate_degree">Doctrate degree</option>
-                                      <option value="masters_degree">Master's degree</option>
-                                      <option value="bachelors_degree">Bachelor's degree</option>
-                                      <option value="high_school">High School degree</option>
-                                      </select>
-                                  </div>
-                              </p>
-                              <div class="degree_class">
-                                  <p>
-                                      <label for="degree_details">
-                                          <span>Qualification Details: </span>
-                                      </label>
-                                      <input type="text" id="degree_details" name="Qualification info">
-                                  </p>
-                                  <p>
-                                  <label for="yop">
-                                      <span>Year of Passing: </span>
-                                  </label>
-                                      <input id="yop" type="month" name="year_of_passing" min="1900-01" max="2020-12">                
-                                  </p>
+            <div class="row ">
+                <div class="col pr-4 pl-5 m-4">  
+                  <h2 class=" mb-4">Contact Us</h2>
+                  <div id="frm">
+                    <form action="">
+                      <div class="row" >
+                        <div class="col-md-6">
+                           <fieldset class="form-group border border-info p-3">
+                              <legend class="w-auto px-2">Personal Detail</legend>
+
+                              <div class="form-group">
+                                 <label for="name">Name<span class="error">*</span></label>
+                                  <input type="name" class="form-control" id="name">
                               </div>
-                          </fieldset>
-                          <p>
-                              <label for="address">
-                                  <span>Contact Address: </span>
-                              </label>
-                              <textarea id="address" rows="4" cols="30"></textarea>
-                          </p>
-                          <fieldset>                
-                                  <legend>Current Post Details</legend>
-                                  <div id="current_post">
-                                      <label for="current_post">
-                                          <span>Current Position: </span>
-                                          <strong><abbr title="required">*</abbr></strong>
-                                      </label>
-                                      <br>
-                                      <div class="radio_setting">
-                                          <input type="radio" id="employed" name="position" value="employed" class="radio">
-                                          <label for="employed">
-                                              <span>Employed</span>
-                                          </label>
-                                          <input type="radio" id="student" name="position" value="student" class="radio">
-                                          <label for="student">
-                                              <span>Student</span>
-                                          </label>
-                                          <input type="radio" id="unemployed" name="position" value="unemployed" class="radio">
-                                          <label for="unemployed">
-                                              <span>Unemployed</span>
-                                          </label>
-                                      </div>
-                                      <p style="margin-top: 10px;">
-                                          <label for="company_name">
-                                              <span>Company Name: </span>
-                                          </label>
-                                          <input type="text" id="cname" name="cname">
-                                      </p>
-                                  </div>                
-                          </fieldset>
-                          <div class="query">
-                              <p>
-                                  <label for="query">
-                                      <span>Query: </span>
-                                      <strong><abbr title="required">*</abbr></strong>
-                                  </label>
-                                  <textarea id="query" rows="4" cols="30"></textarea>
-                              </p>
+
+                              <div class="form-group">
+                                <label for="email">Email<span class="error">*</span></label>
+                                <input type="email" class="form-control" id="email">
+                              </div>
+
+                              <div class="form-group">
+                                 <label for="mobile">Mobile<span class="error">*</span></label>
+                                  <input type="tel" class="form-control" id="mobile">
+                              </div>
+                              <div class="form-group">
+                                 <label for="address">Address</label>
+                                <textarea name="address" class="form-control"></textarea>
+                              </div>
+                            </fieldset>
+                        </div>
+                        <div clas="col-md-6">
+                          <fieldset class="form-group border border-info p-3">
+                          <legend class="w-auto px-2">Qualification</legend>
+                          <div class="form-row">
+                            <div class="form-group  col-md-6">
+                              <label for="Qualification">Highest Qualification<span class="error">*</span></label>
+                              <select name="high_degree" class="form-control">
+                                <option value="doctrate_degree">Doctrate degree</option>
+                                <option value="masters_degree">Master's degree</option>
+                                <option value="bachelors_degree">Bachelor's degree</option>
+                                <option value="high_school">High School degree</option>                              
+                              </select>
+                            </div>
+
+                            <div class="form-group col-md-6" >
+                              <label>Year of passing</label>
+                              <input id="yop" type="month" name="year_of_passing" min="1900-01" max="2020-12" class="form-control">  
+                            </div>
                           </div>
-                      </section>
-                      <section>
-                          <p> <button type="submit" id="submit_button" class="block">Submit</button> </p>
-                      </section>
-                  </form>
-                </div>                
+                          <div class="form-group">
+                             <label for="detail">Qualification Detail<span class="error">*</span></label>
+                              <input type="text" class="form-control" id="edu">
+                          </div>
+
+                        </fieldset>
+
+                         <fieldset class="form-group border border-info p-3">
+                          <legend class="w-auto px-2">Your status</legend>                     
+                        
+                          <div class="form-check form-check-inline">    
+                              <input type="radio" id="employed" name="position" value="employed" class="form-check-input" checked="" onclick="showCompany(this.value)">
+                              <label for="employed" class="form-check-label">Employed</label>
+                          </div> 
+                          <div class="form-check form-check-inline">   
+                              <input type="radio" id="student" name="position" value="student" class="form-check-input"  onclick="showCompany(this.value)">
+                              <label for="student" class="form-check-label">Student</label>
+                          </div>
+                          <div class="form-check form-check-inline">    
+                              <input type="radio" id="unemployed" name="position" value="unemployed" class="form-check-input"  onclick="showCompany(this.value)">
+                              <label for="unemployed" class="form-check-label">Unemployed</label>
+                          </div>
+
+                          <div class="form-group" id="company"> 
+                          <br />                         
+                            <input type="text" class="form-control" name="Company" placeholder="Enter company Name">
+                          </div>                      
+                        </fieldset>
+
+                        </div>
+                      </div>
+
+                      <div class="row">                     
+                        <div class="col-md-11">
+                            <fieldset class="form-group border border-info p-3">
+                              <legend class="w-auto px-2">Your Query</legend>
+                              <textarea class="form-control"></textarea>
+                            </fieldset>                       
+
+                        </div>
+                      </div>
+                    </form>
+
+                      <div class="row">                     
+                            <div class="col-md-11 text-center">
+                              <button name="submit" class="btn btn-primary w-25 p-3 " onclick="submitFrm()">Submit form</button>
+                            </div>
+                          </div>
+                   
+                  </div>
+
+                  <div id="thank" class="text-center d-none text-success" style="min-height: 400px;">
+                    <h3>Thank You!</h3>    
+                    Our team will contact you soon.                
+                  </div>
+
+                 
+                </div>                    
+                  
             </div>
         
 
-       
+        <hr />
+      <footer>
+         <div class="" style="min-height: 70px;">
+          <div class="row">
+            <div class="col">
+              <div class="w-25 float-left text-center"><img src="./images/mail.png" width="20" > test@test.com</div>
+              <div class="w-50 float-left text-center"> @copyright reserved</div>
+              <div class="w-25 float-right text-right">
 
-       </div>
+                <a href="https://www.linkedin.com/in/anu-singh-b8a7a58/" target="_blank"><img src="./images/linkedin.png" width="30"></a>&nbsp;
+                <a href="#" class=""><img src="./images/twitter.png" width="30"></a> &nbsp;
+                <a href="#" class="" ><img src="./images/skype.png" width="30"></a> &nbsp;
 
-     
+              </div>
+            </div>
+          </div>
+
+          
+         </div>
+       </footer>
+
+       </div>   
 
     </body>
+
+    <script type="text/javascript">
+      showCompany =(compVal) =>{        
+        if(compVal=="employed"){
+          document.getElementById("company").className = "d-block";
+
+        }else{
+          document.getElementById("company").className = "d-none";
+        }
+        
+      }
+
+      submitFrm =()=>{        
+        document.getElementById("frm").className = "d-none";
+        document.getElementById("thank").classList.remove("d-none");
+      };
+
+    </script>
 </html>
 
 
