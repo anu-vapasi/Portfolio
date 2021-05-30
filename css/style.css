@@ -1,8 +1,9 @@
 
 .bg{
-	background-image:url(../images/bg-plain.jpeg);
+	background-image:url(../images/dark1.jpg);
 	background-position: center;
 	background-repeat: repeat-y;
+	background-color: #61485d;
 	
 }
 
@@ -45,4 +46,12 @@
 }
 .cardheaderbg{
 	background-color: rgba(255,255,230, 1) !important;
+}
+.cardbody{
+	background-color: #ffffe6 !important;
+}
+
+.activebg{
+	background-color: none !important;
+	border-color: #dee2e6 #dee2e6 #fff;
 }
